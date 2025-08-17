@@ -1,0 +1,51 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif; /* Set font */
+  background-color: #f9f9f9;      /* Light background */
+  display: flex;                  /* Center content horizontally */
+  justify-content: center;        /* Center content horizontally */
+  align-items: center;            /* Center content vertically */
+  height: 100vh;                  /* Full viewport height */
+}
+
+/* Container holding the calculator */
+.container {
+  background-color: #fff;           /* White background */
+  padding: 25px;                    /* Padding inside container */
+  border-radius: 8px;               /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Slight shadow */
+  text-align: center;               /* Center text */
+  width: 300px;                     /* Fixed width */
+}
+
+/* Input fields styling */
+input {
+  width: 90%;               /* Almost full width */
+  padding: 8px;             /* Padding inside input */
+  margin: 5px 0;            /* Spacing between inputs */
+  border-radius: 4px;       /* Rounded edges */
+  border: 1px solid #ccc;   /* Light gray border */
+}
+
+/* Button styling */
+button {
+  width: 95%;                  /* Almost full width */
+  padding: 10px;               /* Padding inside button */
+  margin-top: 10px;            /* Space above button */
+  background-color: #4CAF50;   /* Green background */
+  color: white;                /* White text */
+  border: none;                /* Remove border */
+  border-radius: 4px;          /* Rounded corners */
+  cursor: pointer;             /* Pointer on hover */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #45a049;  /* Darker green on hover */
+}
+
+/* Result display */
+.result {
+  margin-top: 15px;       /* Space above result */
+  font-weight: bold;      /* Bold text */
+}

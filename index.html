@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tip Calculator</title>
+  <!-- Link CSS from static folder -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Tip Calculator</h2>
+    
+    <!-- Form to take user input for bill and tip percentage -->
+    <form method="POST">
+      <input type="number" name="bill" placeholder="Enter bill amount" required>
+      <input type="number" name="tip_percent" placeholder="Tip % (e.g., 15)" required>
+      <button type="submit">Calculate Tip</button>
+    </form>
+
+    <!-- Display the result if calculation is done -->
+    {% if tip is not none %}
+      <div class="result">
+        <p>Tip Amount: ${{ tip }}</p>
+        <p>Total Bill: ${{ total }}</p>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
